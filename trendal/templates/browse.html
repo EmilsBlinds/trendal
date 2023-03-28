@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>TRENDAL</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/browse.css' ) }}">
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+	{% extends "base.html" %}
+	</head>
+	<body>
+	{% block content %}
+		<!--
+			header
+		-->
+
+		
+
+	
+
+
+<div class="container">
+
+	<div class="left_side">
+
+		<!--
+			price slider
+		-->
+
+		<div class="price-filter">
+			<h3>Filter by price</h3>
+
+			<div class="price-inputs">
+			<label for="min-price"></label>
+			<input class="price-box" placeholder="$   Min" type="number" id="min-price" name="min-price">
+			<label for="max-price"></label>
+			<input class="price-box" placeholder="$   Max" type="number" id="max-price" name="max-price">
+			<button class="price-button" id="price-filter-btn">Apply</button>
+			</div>
+			<div class="horizontal_line1"></div>	
+		</div>
+		
+		
+		
+		
+
+		<!--
+			filters
+		-->
+
+		<div class="filter_section">
+
+			<h2>Filter by style</h2>
+
+			<div class="horizontal_line2"></div>
+
+			<label>
+			<input class="style_category" type="checkbox" name="category" value="techwear">
+			Techwear
+			</label>
+
+			<label>
+			<input class="style_category" type="checkbox" name="category" value="businesscore">
+			Businesscore
+			</label>
+
+			<label>
+			<input class="style_category" type="checkbox" name="category" value="workwear">
+			Workwear
+			</label>
+
+			<label>
+			<input class="style_category" type="checkbox" name="category" value="gorpcore">
+			Gorpcore
+			</label>
+
+			<label>
+				<input class="style_category" type="checkbox" name="category" value="vintage">
+				Vintage
+			</label>
+
+			<label>
+				<input class="style_category" type="checkbox" name="category" value="athleisure">
+				Athleisure
+			</label>
+
+			<label>
+				<input class="style_category" type="checkbox" name="category" value="grunge">
+				Grunge
+			</label>
+
+			<label>
+				<input class="style_category" type="checkbox" name="category" value="streetwear">
+				Streetwear
+			</label>
+		</div>
+
+		<div class="vertical_line"></div>
+	</div>
+
+	<!--
+		items
+	-->
+
+	<div class="right_side">
+		
+		<div class="items-section">
+			<div class="item_box">
+				<a href="">
+					<img src="{{ url_for('static', filename='images/workwearjacket1.png' ) }}" alt="">
+					<p class="item_name">Carhartt Jacket Beige</p>
+					<p class="item_price" >$59.99</p>
+				</a>
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+<script src="browse.js"></script>
+
+    </div>
+</section>
+	{% endblock %}
+	</body>
+	<script src=""></script>
+</html>

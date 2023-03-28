@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="/trendal/static/css/index.css" />
+		<title>TRENDAL</title>
+	</head>
+	<body>
+
+		<!--
+			header
+		-->
+
+		{% extends "base.html" %}
+
+		{% block content %}
+
+
+<!--
+	categories
+-->
+
+<div class="categories">
+
+    <div class="categories_list">
+
+		<div class="single_category">
+			<a id="browse" href="/browse">
+				<img class="category_img" src="{{ url_for('static', filename='images/techwear.png' ) }}" alt="Techwear">
+				<p class="category_title">TECHWEAR</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="{{ url_for('static', filename='images/businesscore.png' ) }}" alt="Businesscore">
+				<p class="category_title">BUSINESSCORE</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="{{ url_for('static', filename='images/workwear.png' ) }}" alt="Workwear">
+				<p class="category_title">WORKWEAR</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="{{ url_for('static', filename='images/gorpcore.png' ) }}" alt="Gorpcore">
+				<p class="category_title">GORPCORE</p>
+			</a>
+		</div>
+		
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="/trendal/images/vintage.png" alt="Vintage">
+				<p class="category_title">VINTAGE</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="/trendal/images/gorpcore.png" alt="Athleisure">
+				<p class="category_title">ATHLEISURE</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="/trendal/images/grunge.png" alt="Grunge">
+				<p class="category_title">GRUNGE</p>
+			</a>
+		</div>
+
+		<div class="single_category">
+			<a href="/browse">
+				<img class="category_img" src="/trendal/images/gorpcore.png" alt="Streetwear">
+				<p class="category_title">STREETWEAR</p>
+			</a>
+		</div>
+
+		<!--
+			<div class="single-category" href>
+				<hr>
+				<div class="text">
+					<h1>Techwear</h1>
+				</div>
+			</div>
+		</a>
+	-->
+    </div>
+</section>
+{% endblock %}
+	</body>
+	<script src=""></script>
+</html>
